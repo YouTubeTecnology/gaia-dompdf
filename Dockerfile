@@ -1,4 +1,4 @@
-FROM php:7.4-apache
+FROM php:5.6-apache
 # Cambia le sorgenti e disattiva il controllo validità
 RUN sed -i 's|deb.debian.org|archive.debian.org|g' /etc/apt/sources.list && \
     echo 'Acquire::Check-Valid-Until "false";' > /etc/apt/apt.conf.d/99no-check-valid-until
